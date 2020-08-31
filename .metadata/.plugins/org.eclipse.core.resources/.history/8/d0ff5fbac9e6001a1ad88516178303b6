@@ -1,0 +1,15 @@
+package keywordfinal;
+
+//Esta keyword tiene 3 comportamientos distintos
+public class Test {
+	private int numero;
+	
+	public static void main(String[] args) {
+		Test t = new Test();
+		t.numero = 1;
+		System.out.println(t.numero);
+		
+		t.numero = 2;
+		System.out.println(t.numero);
+	}
+}

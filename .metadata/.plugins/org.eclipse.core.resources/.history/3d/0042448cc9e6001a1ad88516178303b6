@@ -1,0 +1,6 @@
+package keywordfinal;
+
+//Esta keyword tiene 3 comportamientos distintos
+public class Test {
+
+}
