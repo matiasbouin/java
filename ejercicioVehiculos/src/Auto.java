@@ -6,7 +6,6 @@ public class Auto extends Vehiculo{
 	Random random = new Random();
 	
 	//Propiedades
-	private int plazas = 5;
 	private int plazasOcupadas;
 	private Pasajero [] pasajeros;
 	private int pesoTotal;
@@ -22,14 +21,6 @@ public class Auto extends Vehiculo{
 	}
 	
 	//Getters and setters
-	public int getPlazas() {
-		return plazas;
-	}
-
-	public void setPlazas(int plazas) {
-		this.plazas = plazas;
-	}
-
 	public int getPlazasOcupadas() {
 		return plazasOcupadas;
 	}
