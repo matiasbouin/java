@@ -9,6 +9,7 @@ public class Main {
 		//Array de pasajeros
 		Pasajero[] pasajeros = new Pasajero[25];
 		
+		//Instancia de Auto, Camion y Colectivo
 		Auto auto = new Auto(69, "Mercedes", "C-250", random.nextInt(6), pasajeros);
 		Camion camion = new Camion(420, "Siemens", "350flip", 9000, random.nextInt(9001));
 		Colectivo colectivo = new Colectivo(69420, "Fiat", "500", random.nextInt(26), pasajeros);
