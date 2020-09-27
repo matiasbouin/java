@@ -35,6 +35,7 @@ public class Main {
 		
 		//Mostrar ordenes por numero de orden
 		//Deberia haber trabajado con ArrayList desde el principio, en este caso creo un ArrayList a partir de mi array comun
+		//ArrayList es una clase genérica, en este caso la especializo en la clase Orden
 		ArrayList<Orden> ordenesList = new ArrayList<Orden>();
 		for (int i = 0; i < ordenes.length; i++) {
 			ordenesList.add(ordenes[i]);
