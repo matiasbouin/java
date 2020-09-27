@@ -4,6 +4,7 @@
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
+import java.util.Comparator;
 import java.util.Random;
 
 
@@ -49,6 +50,22 @@ public class Main {
 		Collections.sort(ordenesList, new OrdenPorApellido());
 		System.out.println(ordenesList);
 		
+		//<-------------- EJERCICIO TERMINADO ----------------->
+		
+		//Clases anonimas => Las defino solo cuando las utilizo, para no crear una nueva clase solo por el metodo de ordenamiento
+		//En este ejemplo: Ordenar las ordenes por importe
+		Collections.sort(ordenesList, new Comparator<Orden>() {
+
+			@Override
+			public int compare(Orden arg0, Orden arg1) {
+				Integer a = arg0.getImporte();
+				Integer b = arg1.getImporte();
+				
+				return a.compareTo(b);
+			}	
+		});
+		
+		System.out.println(ordenesList);
 	}
 
 }
