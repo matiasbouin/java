@@ -66,6 +66,28 @@ public class Main {
 		});
 		
 		System.out.println(ordenesList);
+		
+		//Comparacion por 2 criterios => Primero por numero de orden, luego por importe
+		Collections.sort(ordenesList, new Comparator<Orden>() {
+
+			@Override
+			public int compare(Orden arg0, Orden arg1) {
+				Integer a = arg0.getNumero();
+				Integer b = arg1.getNumero();
+				
+				//Si los numeros de orden son iguales, implemento el ordenamiento por importe
+				if (a.equals(b)) {
+					Integer c = arg0.getImporte();
+					Integer d = arg1.getImporte();
+					
+					return c.compareTo(d);
+				}
+				
+				//Si no se cumple el if, implemento el ordenamiento principal, en este caso por numero de orden
+				return a.compareTo(b);
+			}
+		});
+		System.out.println(ordenesList);
 	}
 
 }
